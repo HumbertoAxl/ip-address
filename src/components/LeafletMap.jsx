@@ -1,11 +1,11 @@
-import "leaflet/dist/leaflet.css";
-import "leaflet/dist/images/marker-icon.png";
-import "leaflet/dist/images/marker-shadow.png";
+import L from "leaflet";
 import { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "./LeafletMap.css";
 import { useMap } from "react-leaflet/hooks";
 import { Box, Skeleton } from "@mui/material";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
+L.Icon.Default.imagePath = "public/assets/leaflet_images/";
 
 export default function LeafletMap({ searchValue, setIPDetails }) {
     useEffect(() => {
