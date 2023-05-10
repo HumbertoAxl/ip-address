@@ -19,7 +19,7 @@ export default function LeafletMap({ searchValue, setIPDetails }) {
         return null;
     }
     const fetchData = async (ipAddress) => {
-        const response = await fetch(`http://ip-api.com/json/${ipAddress}`);
+        const response = await fetch(`https://ip.humbertoaxl.dev/api/${ipAddress}`);
         const data = await response.json();
         if (data.status === "success") {
             setPosition([data.lat, data.lon]);
