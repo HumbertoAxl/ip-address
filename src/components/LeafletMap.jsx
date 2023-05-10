@@ -5,7 +5,7 @@ import { Box, Skeleton } from "@mui/material";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-L.Icon.Default.imagePath = "public/assets/leaflet_images/";
+L.Icon.Default.imagePath = "../../assets/leaflet_images/";
 
 export default function LeafletMap({ searchValue, setIPDetails }) {
     useEffect(() => {
