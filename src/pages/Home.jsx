@@ -30,7 +30,7 @@ export default function Home() {
                     Loading...
                 </Typography>
             )}
-                    <LeafletMap searchValue={searchValue} setIPDetails={setIPDetails} />
+            <LeafletMap searchValue={searchValue} setIPDetails={setIPDetails} />
         </Container>
     );
 }
