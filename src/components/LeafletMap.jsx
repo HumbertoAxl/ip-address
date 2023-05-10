@@ -4,6 +4,7 @@ import { useMap } from "react-leaflet/hooks";
 import { Box, Skeleton } from "@mui/material";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import "./LeafletMap.css"
 
 L.Icon.Default.imagePath = "../../assets/leaflet_images/";
 
