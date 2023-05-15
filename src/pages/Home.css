@@ -2,7 +2,7 @@
     background: linear-gradient(-45deg, #5a52ee, #8252fb, #23a6d5);
     background-size: 100%;
     padding: 0 !important;
-    /* animation: gradient 15s ease infinite; */
+    overflow-x: hidden !important;
 }
 
 @keyframes gradient {
